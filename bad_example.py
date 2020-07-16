@@ -27,7 +27,7 @@ if __name__ == '__main__':
 # Why is this bad?
 # datetime.now().time() is a hidden input that is impossible to test
 # calls to this function will produce different results
-# Tied to concrete data source - not resuable for other sources
+# Tied to concrete data source - not reusable for other sources
 # violates Single Responsibility Principle - it consumes and processes
 # lies about the information - should know where the sources is coming from (hidden inputs)
 # Hard to predict and maintain - depends on a mutable global state 

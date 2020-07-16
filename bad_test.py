@@ -1,5 +1,5 @@
 import unittest
-import bad_example
+from bad_example import get_time_of_day
 
 # Bad example of test to test poorly writtern testable code
 
@@ -9,7 +9,7 @@ class Test(unittest.TestCase):
 
     def test(self):
 
-        time_of_day = bad_example.get_time_of_day()
+        time_of_day = get_time_of_day()
 
         self.assertEqual("Morning", time_of_day)
 
